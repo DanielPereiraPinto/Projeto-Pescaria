@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabeçalho"/>
+    <title>Header</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        
+        .header {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 18px;
+            height: 100px;
+            width: 100%;
+        }
+
+        .header__icone {
+            height: 68px;
+        }
+
+        .header__nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav__a {
+            color: #000000;
+            font-family: 'Sarala', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .nav__a:hover{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body class="body">
+
+    <header class="header">
+        <a href="../index/index.html" target="_parent">
+            <img class="header__icone" src="icone_principal.png" alt="icone principal">
+        </a>
+        <nav class="header__nav">
+            <a class="nav__a" href="../nossa_pesca/index.html" target="_parent">Nossa Pesca</a>
+            <a class="nav__a" href="../fotos/fotos.html" target="_parent">Fotos</a>
+            <a class="nav__a" href="../videos/videos.html" target="_parent">Vídeos</a>
+            <a class="nav__a" href="../localizacao/localizacao.html" target="_parent">Localização</a>
+        </nav>
+    </header>
+
+</body>
+</html>
