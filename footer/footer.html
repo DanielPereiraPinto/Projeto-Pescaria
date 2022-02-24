@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rodapé"/>
+    <title>Footer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        p, .main__h1, .main__h3{
+            font-family: 'Sarala', sans-serif;
+            font-weight: 400;
+        }
+
+        .footer { 
+            border-top: 0.4px solid #030303;
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            justify-content: space-evenly;
+            padding: 21px;
+            width: 100%;
+        }
+        .footer__div {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .footer a{
+            color: #000000;
+        }
+        .footer__icone {
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body class="body">
+    
+    <footer class="footer">
+        <div class="footer__div">
+            <p>Criado por Daniel Pereira Pinto, cursando Tecnólogo em Análise e Desenvolvimento de Sistemas</p><br>
+            <p><a href="https://www.instagram.com/daniel.2p/" target="_blank">Instagran,</a> 
+            <a href="https://www.facebook.com/daniell2p" target="_blank">Facebook</a> e
+            <a href="https://www.linkedin.com/in/daniel-pereira-3b7007183/" target="_blank">Linkedin</a></p>
+        </div> 
+        <a href="https://github.com/DanielPereiraPinto" target="_blank">
+            <img class="footer__icone" src="icone_github.png" alt="icone github">
+        </a>
+    </footer>
+
+</body>
+</html>
