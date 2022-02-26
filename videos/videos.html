@@ -7,6 +7,7 @@
     <meta name="description" content="Videos da Pescaria."/>
     <link rel="stylesheet" href="videos-style.css">
     <title>Videos</title>
+    
 </head>
 <body>
     <header>
@@ -14,9 +15,57 @@
     </header>
 
     <main class="main">
-        <div class="main__div">  
-        </div>
+        <section class="section-principal">
+            <h1>Nossos vídeos mais engraçados!!!</h1>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OixE2qB2s1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="title"></h3>
+            </div>
+        </section>
+
+
+        <section class="section-secundaria">
+            <div class="video-list">
+                <div class="vid">
+                    <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/OixE2qB2s1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="title">01. video número 1</h3>
+                </div>
+                <div class="vid">
+                    <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/HBzM6EK1M5c" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; muted;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="title">02. video número 2</h3>
+                </div>
+                <div class="vid">
+                    <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/Kp9xtolyuPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="title">03. video número 3</h3>
+                </div>
+                <div class="vid">
+                    <iframe class="iframe"  width="560" height="315" src="https://www.youtube.com/embed/iy8LOpzObvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="title">04. video número 4</h3>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.section-principal iframe');
+        let title = document.querySelector('.section-principal .title');
+        
+        listVideo.forEach (iframe =>{
+            iframe.onclick = ()=>{
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                iframe.classList.add('active');
+                if(iframe.classList.contains('active')){
+                    let src = iframe.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = iframe.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    </script>
+
 
     <footer>
         <iframe class="iframe__footer" src="../footer/footer.html" frameborder="0"></iframe>
