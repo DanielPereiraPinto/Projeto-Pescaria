@@ -20,11 +20,34 @@ p{
 
 .main {
     border-top: 0.4px solid #030303;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 300px;
+    height: auto;
     position: sticky;
      
+}
+.section-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+.section-secundaria{
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.video-list{
+    display: flex;
+    gap: 25px;
+}
+.title{
+    cursor: pointer;
+}
+
+.iframe{
+    display: none;
 }
 
 .iframe__footer{
