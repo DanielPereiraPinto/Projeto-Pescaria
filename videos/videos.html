@@ -15,7 +15,7 @@
     </header>
 
     <main class="main">
-        <section class="section-principal">
+        <section class="section__principal">
             <h1 class="main__h1">Nossos vídeos mais engraçados!!!</h1>
 
             <div class="video">
@@ -25,8 +25,8 @@
         </section>
 
 
-        <section class="section-secundaria">
-            <div class="video-list">
+        <div class="section__secundaria">
+            <div class="video__list">
                 <div class="vid">
                     <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/OixE2qB2s1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <button class="button">Vídeo 01</button>
@@ -44,13 +44,13 @@
                     <button class="button">Vídeo 04</button>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <script>
-        let listVideo = document.querySelectorAll('.video-list .vid');
-        let mainVideo = document.querySelector('.section-principal iframe');
-        let title = document.querySelector('.section-principal .title');
+        let listVideo = document.querySelectorAll('.video__list .vid');
+        let mainVideo = document.querySelector('.section__principal iframe');
+        let title = document.querySelector('.section__principal .title');
         
         listVideo.forEach (iframe =>{
             iframe.onclick = ()=>{

@@ -16,6 +16,7 @@
 .main {
     border-top: 0.4px solid #030303;
     height: auto;
+    width: 100%;
     position: sticky;   
     flex-wrap: wrap; 
     display: flex;
@@ -27,12 +28,14 @@
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
 }
-.section-principal{
+.section__principal{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     flex-direction: column;
+    width: 100%;
+    overflow: hidden;
 }
 
 .main__h1{
@@ -49,14 +52,46 @@
     border-radius: 25px;
 }
 
-.section-secundaria{
+.section__secundaria{
     display: flex;
     padding: 25px;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
+    overflow: hidden;
 }
-.video-list{
+
+@media (max-width: 577px){
+    .video__iframe{
+         max-width: 400px;
+         max-height: 300px;
+    }
+    .video__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 406px){
+    .video__iframe{
+         max-width: 300px;
+         max-height: 250px;
+    }
+    .vid button{
+        height: 20px;
+        width: 60px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 290px){
+    .video__iframe{
+         max-width: 240px;
+         max-height: 200px;
+    }
+}
+
+.video__list{
     display: flex;
     gap: 35px;
 }
