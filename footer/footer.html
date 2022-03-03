@@ -15,7 +15,7 @@
             padding: 0;
             text-decoration: none;
         }
-        p, .main__h1, .main__h3{
+        p{
             font-family: 'Sarala', sans-serif;
             font-weight: 400;
         }
@@ -41,13 +41,47 @@
             height: 40px;
         }
 
+        .footer__p{
+            display: none;
+        }
+
+        @media (max-width:782px){
+            .footer__icone {
+                height: 30px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        @media (max-width:634px){
+            .footer__p__res{
+                display: flex;
+                flex-wrap: wrap;   
+            }
+            .footer__p{
+                display: none;
+            }
+        }
+        @media (max-width:400px){
+            p{
+                font-size: 10px;
+            }
+        }
+        @media (max-width:318px){
+            .footer__p__res{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body class="body">
     
     <footer class="footer">
         <div class="footer__div">
-            <p>Criado por Daniel Pereira Pinto, cursando Tecnólogo em Análise e Desenvolvimento de Sistemas</p><br>
+            <p class="footer__p">Criado por Daniel Pereira Pinto, cursando Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+            
+            <p class="footer__p__res">Criado por Daniel Pereira Pinto, cursando </p>
+            <p class="footer__p__res"> Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
             <p><a href="https://www.instagram.com/daniel.2p/" target="_blank">Instagran,</a> 
             <a href="https://www.facebook.com/daniell2p" target="_blank">Facebook</a> e
             <a href="https://www.linkedin.com/in/daniel-pereira-3b7007183/" target="_blank">Linkedin</a></p>
