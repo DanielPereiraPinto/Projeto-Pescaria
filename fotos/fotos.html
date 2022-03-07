@@ -5,14 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fotos da Pescaria."/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style-fotos.css"/>
+    <link rel="stylesheet" href="../header/style_header.css">
     <title>Fotos</title>
 </head>
 <body>
-    <header>
-    <iframe class="iframe__header" src="../header/header.html" frameborder="0"></iframe>
+    <header class="header">
+        <a href="../index/index.html" target="_parent">
+            <img class="header__icone" src="../header/icone_principal_titulo.png" alt="icone principal">
+        </a>
+        <nav class="header__nav">
+            <input type="checkbox" id="check">
+		    <label for="check" class="checkbtn">
+			    <i class="material-icons" style="font-size:36px">menu</i>
+		    </label>
+            <ul>    
+                <li><a class="nav__a" href="../nossa_pesca/index.html" target="_parent">Nossa Pesca</a></li>
+                <li><a class="nav__a" href="../fotos/fotos.html" target="_parent">Fotos</a></li>
+                <li><a class="nav__a" href="../videos/videos.html" target="_parent">Vídeos</a></li>
+                <li><a class="nav__a" href="../localizacao/localizacao.html" target="_parent">Localização</a></li>
+            </ul>    
+        </nav>
     </header>
-
     <main class="main">
         <div class="main__div">  
         </div>
