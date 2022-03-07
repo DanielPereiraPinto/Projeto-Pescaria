@@ -5,19 +5,12 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    background-color: #f0f0f7;
 }
-
-.iframe__header{
-    position: relative;
-    width: 100%;
-    height: 100px;
-}
-
 .main {
     border-top: 0.4px solid #030303;
     height: auto;
     width: 100%;
-    position: sticky;   
     flex-wrap: wrap; 
     display: flex;
     justify-content: center;
@@ -71,6 +64,14 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .vid button{
+        height: 20px;
+        width: 60px;
+        font-size: 12px;
+    }
+    .section__secundaria{
+        padding: 28px;
+    }
 }
 
 @media (max-width: 406px){
@@ -78,10 +79,8 @@
          max-width: 300px;
          max-height: 250px;
     }
-    .vid button{
-        height: 20px;
-        width: 60px;
-        font-size: 12px;
+    .main__h1{
+        font-size: 18px;
     }
 }
 @media (max-width: 290px){
@@ -89,26 +88,31 @@
          max-width: 240px;
          max-height: 200px;
     }
+    .main__h1{
+        font-size: 14px;
+    }
+    ul{
+        height: 415px;
+    }
 }
-
 .video__list{
     display: flex;
     gap: 35px;
 }
 .button{
     cursor: pointer;
-    background-color: #e7d9ceef;
+    background-color: #524d73;
     border-radius: 12px;
     border: none;
     box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.5);
-    color: #000000;
+    color: #c4c1d9;
     height: 30px;
     width: 90px;
     font-size: 17px;
 }
 
 .button:active{
-    background-color: #b1a195de;
+    background-color: #484464;
     box-shadow: none;
     font-size: 16px;
 }
@@ -122,4 +126,9 @@
     bottom: 0;
     width: 100%;
     height: 100px;
+}
+@media (max-width: 433px){
+    ul{
+        height: 453px;
+    }
 }
