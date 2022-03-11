@@ -1,27 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
-
 *{
+    background-color: #f0f0f7;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-color: #f0f0f7;
 }
-
-p{
+.h1{
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
+    font-size: 25px;
+    margin: 8px;
 }
-.main {
+.maps{
+    align-items: center;
     border-top: 0.4px solid #030303;
     display: flex;
-    flex-direction: row-reverse;
-    height: 450px;
-}
-
-.iframe__footer{
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
     position: relative;
-    bottom: 0;
     width: 100%;
+}
+.maps__iframe{
+    border-style: none;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+img{
+    border-radius: 10px;
+}
+.galleryContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    width: 800px;
+}
+.gallery{
+    align-items: center;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.gallery input{
+    display: none;
+}
+.gallery > img:first-of-type{
+    display: flex;
+    left: 0;
+    position: relative;
+    top: 0;
+    z-index: 10;
+}
+.galleryImage{
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.25s ease-out;
+    width: 100%;
+}
+.thumbnails{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 13%;
+    justify-content: flex-start;
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.thumbnailImage{
+    margin: 0 5px;
+}
+.thumbnailImage img{
+    height: 60px;
+    object-fit: cover;
+    width: 100%;
+}
+.thumbnailImage:first-child{
+    margin-left: 0;
+}
+.thumbnailImage:last-child{
+    margin-right: 0;
+}
+#c1:checked + #i1{
+    opacity: 1;
+}
+#c2:checked + #i2{
+    opacity: 1;
+}
+#c3:checked + #i3{
+    opacity: 1;
+}
+.iframe__footer{
+    bottom: 0;
     height: 100px;
+    position: relative;
+    width: 100%;
+}
+@media (max-width: 706px){
+    p{
+        font-size: 20px;    
+    }
+    .galleryContainer, .maps__iframe{
+        margin: 0;
+        width: 100%;
+        z-index: 0;
+    }
+}
+@media (max-width: 453px){
+    nav ul{
+        height: 1113px;
+        z-index: 1;
+    }
+    
 }
