@@ -47,37 +47,6 @@ nav ul li, .material-icons {
 #check {
     display: none;
 }
-@media (max-width: 453px){
-    .checkbtn {
-        display: flex;
-        align-items:flex-end;
-    }
-    ul{
-        border-top: 0.4px solid #030303;
-        position: absolute;
-        width: 100%;
-        height: 450px;
-        background: #f0f0f7;
-        top: 100px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 40px ;
-        line-height: 50px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    #check:checked ~ ul {
-        left: 0;
-    }
-    .nav__a:hover{
-        font-weight: bold;
-    }
-}
 @media (max-width: 516px){
     .nav__a{
         font-size: 15px;
@@ -90,5 +59,36 @@ nav ul li, .material-icons {
     }
     .header__nav {
         gap: 20px;
+    }
+}
+@media (max-width: 453px){
+    .checkbtn {
+        align-items:flex-end;
+        display: flex;
+    }
+    ul{
+        background: #f0f0f7;
+        border-top: 0.4px solid #030303;
+        height: 450px;
+        left: -100%;
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        transition: all .5s;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        line-height: 50px;
+        margin: 40px ;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .nav__a:hover{
+        font-weight: bold;
     }
 }
