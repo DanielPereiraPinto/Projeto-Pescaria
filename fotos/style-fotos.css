@@ -35,7 +35,7 @@ img{
 .gallery{
     align-items: center;
     display: flex;
-    height: 380px;
+    height: auto;
     justify-content: center;
     position: relative;
     width: 100%;
@@ -65,13 +65,14 @@ img{
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 13%;
+    height: 16%;
     justify-content: flex-start;
     margin-top: 10px;
     overflow-x: auto;
     overflow-y: hidden;
 }
 .thumbnailImage{
+    cursor: pointer;
     margin: 0 5px;
 }
 .thumbnailImage img{
@@ -148,7 +149,7 @@ img{
 }
 @media (max-width: 453px){
     nav ul{
-        height: 755px;
+        height: 760px;
         z-index: 1;
     }
     
