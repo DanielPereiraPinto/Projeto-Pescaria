@@ -48,7 +48,7 @@ img{
 .gallery{
     align-items: center;
     display: flex;
-    height: 450px;
+    height: auto;
     justify-content: center;
     position: relative;
     width: 100%;
@@ -78,7 +78,7 @@ img{
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 13%;
+    height: 22%;
     justify-content: flex-start;
     margin-top: 10px;
     overflow-x: auto;
@@ -88,6 +88,7 @@ img{
     margin: 0 5px;
 }
 .thumbnailImage img{
+    cursor: pointer;
     height: 60px;
     object-fit: cover;
     width: 100%;
@@ -125,7 +126,7 @@ img{
 }
 @media (max-width: 453px){
     nav ul{
-        height: 1113px;
+        height: 900px;
         z-index: 1;
     }
     
