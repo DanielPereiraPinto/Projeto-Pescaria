@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Patrick+Hand&display=swap');
 *{
     background-color: #f0f0f7;
     box-sizing: border-box;
@@ -16,7 +16,7 @@
     width: 100%;
 }
 .main__h1, .title, .button{
-    font-family: 'Sarala', sans-serif;
+    font-family: 'Acme', sans-serif;
     font-weight: 400;
 }
 .section__principal{
@@ -29,7 +29,8 @@
     width: 100%;
 }
 .main__h1{
-    padding: 10px;
+    font-size: 30px;
+    margin: 15px;
 }
 .video{
     align-items: center;
@@ -118,10 +119,5 @@
     }
     ul{
         height: 415px;
-    }
-}
-@media (max-width: 433px){
-    ul{
-        height: 453px;
     }
 }

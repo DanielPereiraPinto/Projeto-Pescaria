@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Patrick+Hand&display=swap');
 *{
     background-color: #f0f0f7;
     box-sizing: border-box;
@@ -6,11 +6,19 @@
     padding: 0;
     text-decoration: none;
 }
-.h1{
-    font-family: 'Sarala', sans-serif;
+.h1, .h5{
+    font-family: 'Acme', sans-serif;
     font-weight: 400;
-    font-size: 25px;
     margin: 8px;
+}
+.h1{
+    font-size: 30px;
+}
+.h5{
+    font-size: 17px;
+}
+a{
+    color: #030303;
 }
 .maps{
     align-items: center;
@@ -26,6 +34,7 @@
 .maps__iframe{
     border-style: none;
     border-radius: 10px;
+    margin: 10px;
 }
 .container{
     display: flex;
@@ -50,6 +59,7 @@ img{
     display: flex;
     height: auto;
     justify-content: center;
+    margin: 10px;
     position: relative;
     width: 100%;
 }
@@ -114,20 +124,30 @@ img{
     position: relative;
     width: 100%;
 }
-@media (max-width: 706px){
-    p{
-        font-size: 20px;    
-    }
+@media (max-width: 706px){  
     .galleryContainer, .maps__iframe{
         margin: 0;
         width: 100%;
         z-index: 0;
     }
 }
+@media (max-width: 516px){
+    .maps__iframe{
+        height: 300px;
+    }
+    .h1{
+        font-size: 24px;
+    }
+    .h5{
+        font-size: 14px;
+    }  
+}
 @media (max-width: 453px){
     nav ul{
-        height: 900px;
         z-index: 1;
+    }
+    .maps__iframe{
+        height: 250px;
     }
     
 }
