@@ -16,10 +16,24 @@ p{
     color: #030303;
 }
 .main {
+    background-color: #f0f0f7;
     border-top: 0.4px solid #030303;
     display: flex;
-    flex-direction: row-reverse;
-    height: 450px; 
+    height: 380px;
+    opacity: 0.9;
+    margin: auto;
+    justify-content: center;
+}
+/* controla a opacidade da imagem */ 
+.main::before {
+    background-image: url(../alerta.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    opacity: 0.3;
+    width: 380px;
+    z-index: -1;
+    margin: 5px;
 }
 .iframe__footer{
     position: relative;
