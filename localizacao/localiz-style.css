@@ -27,7 +27,7 @@ a{
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     width: 100%;
 }
@@ -50,7 +50,7 @@ img{
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     width: 800px;
 }
