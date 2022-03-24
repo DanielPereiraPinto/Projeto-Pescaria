@@ -27,7 +27,7 @@
 img{
     border-radius: 10px;
 }
-.galleryContainer{
+.container__gallery{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ img{
     .h5{
         font-size: 14px;
     }  
-    .galleryContainer{
+    .container__gallery{
         margin: 0;
         width: 100%;
         z-index: 0;
