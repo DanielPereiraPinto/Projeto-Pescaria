@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Patrick+Hand&display=swap');
 *{
-    background-color: #f0f0f7;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+.main, .header, .iframe__footer{
+    background-color: #f0f0f7;
 }
 .main {
     border-top: 0.4px solid #030303;

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Patrick+Hand&display=swap');
 *{
-    background-color: #f0f0f7;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+.container, .header, .iframe__footer{
+    background-color: #f0f0f7;
 }
 .h1, .h5{
     font-family: 'Acme', sans-serif;
@@ -34,6 +36,7 @@ img{
     padding: 20px;
     position: relative;
     width: 600px;
+    opacity: 0.9;
 }
 .gallery{
     align-items: center;
