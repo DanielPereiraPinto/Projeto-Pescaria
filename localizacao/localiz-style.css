@@ -6,7 +6,7 @@
     padding: 0;
     text-decoration: none;
 }
-.h1, .h5{
+.h1, .p{
     font-family: 'Acme', sans-serif;
     font-weight: 400;
     margin: 8px;
@@ -14,8 +14,8 @@
 .h1{
     font-size: 30px;
 }
-.h5{
-    font-size: 17px;
+.p{
+    font-size: 15px;
 }
 a{
     color: #030303;
