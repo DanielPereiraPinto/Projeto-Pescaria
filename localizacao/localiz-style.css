@@ -44,7 +44,7 @@ a{
 img{
     border-radius: 10px;
 }
-.galleryContainer{
+.container__gallery{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -149,5 +149,4 @@ img{
     .maps__iframe{
         height: 250px;
     }
-    
 }
