@@ -26,11 +26,11 @@
 .nav__a:hover{
     font-weight: bold;
 }
-nav ul {
+.nav__ul {
     float: right;
     margin-right: 20px;
 }
-nav ul li, .material-icons {
+.nav__li, .material-icons {
     display: inline-block;
     line-height: 30px;
     margin: 0 8px;
@@ -66,7 +66,7 @@ nav ul li, .material-icons {
         align-items:flex-end;
         display: flex;
     }
-    ul{
+    .nav__ul{
         background: #f0f0f7;
         border-top: 0.4px solid #030303;
         height: 280px;
@@ -77,12 +77,12 @@ nav ul li, .material-icons {
         transition: all .5s;
         width: 100%;
     }
-    nav ul li{
+    .nav__li{
         display: block;
         line-height: 50px;
         margin: 15px ;
     }
-    nav ul li a {
+    .nav__a {
         font-size: 20px;
     }
     #check:checked ~ ul {
