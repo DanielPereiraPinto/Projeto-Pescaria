@@ -14,7 +14,7 @@
             padding: 0;
             text-decoration: none;
         }
-        p{
+        .footer__p, .footer__p--a{
             font-family: 'Sarala', sans-serif;
             font-weight: 400;
             font-size: 15px;
@@ -34,39 +34,33 @@
             display: flex;
             flex-direction: column;
         }
-        .footer a{
+        .footer__p--a{
             color: #000000;
         }
         .footer__icone {
             height: 40px;
         }
-        .footer__p{
-            display: none;
-        }
         @media (max-width:782px){
             .footer__icone {
                 height: 30px;
             }
-            p{
+            .footer__p, .footer__p--a{
                 font-size: 12px;
             }
         }
         @media (max-width:634px){
-            .footer__p__res{
+            .footer__p{
                 display: flex;
                 flex-wrap: wrap;   
             }
-            .footer__p{
-                display: none;
-            }
         }
         @media (max-width:400px){
-            p{
+            .footer__p, .footer__p--a{
                 font-size: 12px;
             }
         }
         @media (max-width:367px){
-            .footer__p__res{
+            .footer__p{
                 display: none;
             }
             .footer{
@@ -78,15 +72,14 @@
 <body class="body">
     <footer class="footer">
         <div class="footer__div">
-            <p class="footer__p">Criado por Daniel Pereira Pinto, cursando Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
-            <p class="footer__p__res">Criado por Daniel Pereira Pinto, cursando </p>
-            <p class="footer__p__res"> Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
-            <p><a href="https://www.instagram.com/daniel.2p/" target="_blank">Instagran,</a> 
-            <a href="https://www.facebook.com/daniell2p" target="_blank">Facebook</a> e
-            <a href="https://www.linkedin.com/in/daniel-pereira-3b7007183/" target="_blank">Linkedin</a></p>
+            <p class="footer__p">Criado por Daniel Pereira Pinto, cursando </p>
+            <p class="footer__p"> Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+            <p class="footer__p--a"><a class="footer__p--a" href="https://www.instagram.com/daniel.2p/" target="_blank">Instagran,</a> 
+            <a class="footer__p--a" href="https://www.facebook.com/daniell2p" target="_blank">Facebook</a> e
+            <a class="footer__p--a" href="https://www.linkedin.com/in/daniel-pereira-3b7007183/" target="_blank">Linkedin</a></p>
         </div> 
         <a href="https://github.com/DanielPereiraPinto" target="_blank">
-            <img class="footer__icone" src="icone_github.png" alt="icone github">
+            <img class="footer__icone" src="icone-github.png" alt="icone github">
         </a>
     </footer>
 </body>
