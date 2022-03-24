@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
 }
-.header, .main, .iframe__footer{
+.header, .main, .iframe__footer, .container{
     background-color: #f0f0f7;
 }
 .header__a {
@@ -15,8 +15,7 @@
 .main {
     border-top: 0.4px solid #030303;
     display: flex;
-    height: 380px;
-    opacity: 0.9;
+    height: 180px;
     margin: auto;
     width: auto;
     justify-content: center;
@@ -40,9 +39,8 @@
     flex-direction: column;
     height: 380px;
     width: 100%;
-    opacity: 0.9;
     margin: 20px;
-    gap: 5px;
+    gap: 8px;
 }
 .h1, .p{
     font-family: 'Acme', sans-serif;
@@ -55,6 +53,105 @@
 .p{
     font-size: 15px;
 }
+/* galeria */
+img{
+    border-radius: 10px;
+}
+.galleryContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 600px;
+}
+.gallery{
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+.gallery input{
+    display: none;
+}
+.gallery > img:first-of-type{
+    display: flex;
+    left: 0;
+    position: relative;
+    top: 0;
+    z-index: 10;
+}
+.galleryImage{
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.25s ease-out;
+    width: 100%;
+}
+.thumbnails{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 16%;
+    justify-content: flex-start;
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.thumbnailImage{
+    cursor: pointer;
+    margin: 0 5px;
+}
+.thumbnailImage img{
+    height: 90px;
+    object-fit: cover;
+    width: 100%;
+}
+.thumbnailImage:first-child{
+    margin-left: 0;
+}
+.thumbnailImage:last-child{
+    margin-right: 0;
+}
+#c1:checked + #i1{
+    opacity: 1;
+}
+#c2:checked + #i2{
+    opacity: 1;
+}
+#c3:checked + #i3{
+    opacity: 1;
+}
+#c4:checked + #i4{
+    opacity: 1;
+}
+#c5:checked + #i5{
+    opacity: 1;
+}
+#c6:checked + #i6{
+    opacity: 1;
+}
+#c7:checked + #i7{
+    opacity: 1;
+}
+#c8:checked + #i8{
+    opacity: 1;
+}
+#c9:checked + #i9{
+    opacity: 1;
+}
+#c10:checked + #i10{
+    opacity: 1;
+}
 .iframe__footer{
     position: relative;
     bottom: 0;
@@ -64,5 +161,8 @@
 @media (max-width: 367px){
     .main::before {
         margin: 0px;
+    }
+    .main {
+        height: 230px;
     }
 }
