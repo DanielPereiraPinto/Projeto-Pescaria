@@ -21,7 +21,7 @@
     font-family: 'Acme', sans-serif;
     font-weight: 400;
 }
-.section__principal{
+.section__first{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
     border-radius: 25px;
     padding: 10px;
 }
-.section__secundaria{
+.section__second{
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -90,7 +90,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .vid button{
+    .button{
         font-size: 12px;
         height: 20px;
         width: 60px;
@@ -98,28 +98,25 @@
     .button:active{
         font-size: 11px;
     }
-    .section__secundaria{
+    .section__second{
         padding: 28px;
     }
 }
-@media (max-width: 406px){
+@media (max-width: 420px){
     .video__iframe{
          max-width: 300px;
          max-height: 250px;
     }
     .main__h1{
-        font-size: 18px;
+        font-size: 22px;
     }
 }
-@media (max-width: 290px){
+@media (max-width: 318px){
     .video__iframe{
          max-width: 240px;
          max-height: 200px;
     }
     .main__h1{
-        font-size: 14px;
-    }
-    ul{
-        height: 415px;
+        font-size: 16px;
     }
 }
