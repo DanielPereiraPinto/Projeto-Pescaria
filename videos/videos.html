@@ -60,8 +60,8 @@
     </main>
     <script>
         let listVideo = document.querySelectorAll('.video__list .vid');
-        let mainVideo = document.querySelector('.section__principal iframe');
-        let title = document.querySelector('.section__principal .title');
+        let mainVideo = document.querySelector('.section__first iframe');
+        let title = document.querySelector('.section__first .title');
         listVideo.forEach (iframe =>{
             iframe.onclick = ()=>{
                 listVideo.forEach(vid => vid.classList.remove('active'));
