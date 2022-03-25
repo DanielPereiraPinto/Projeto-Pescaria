@@ -63,15 +63,18 @@
         font-size: 14px;
     }
     .main__div{
+        height: 470px;
         gap: 40px;
     }
     .main{
+        height: 470px;
         z-index: 0;
     }
     .nav__ul{
         z-index: 1;
     }
     .main::before {
+        height: 470px;
         opacity: 0.6;
     }    
 }
