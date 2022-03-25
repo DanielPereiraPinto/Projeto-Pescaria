@@ -35,12 +35,12 @@
     gap: 10px;
     margin-left: 20px;
 }
-.section__h1, .section__h3,.section__p,.section__a ,p{
+.section__h1, .section__h3, .section__first--a, .p{
     font-family: 'Acme', sans-serif;
     font-weight: 400;
     color: #000000;
 }
-.section__a:hover{
+.section__first--a:hover{
     color: #524d73;
 }
 .section__h1{
@@ -49,10 +49,10 @@
 .section__h3{
     font-size: 20px;
 }
-p{
+.p{
     font-size: 15px;
 }
-.section__div{
+.section__second--div{
     padding: 10px;
 }
 .img{
@@ -75,10 +75,10 @@ p{
     .section__second{
         margin: auto;       
     }
-    .section__div{
+    .section__second--div{
         border-bottom: 0.1px solid #030303;
     }
-    p {
+    .p {
         font-size: 13px;
     }
 }

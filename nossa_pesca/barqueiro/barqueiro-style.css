@@ -44,7 +44,7 @@
     margin: 20px;
     gap: 5px;
 }
-.h1, .p, .a{
+.h1, .p, .main__div--a{
     font-family: 'Acme', sans-serif;
     font-weight: 400;
     color: #000000;
@@ -56,11 +56,11 @@
 .p{
     font-size: 15px;
 }
-.a{
+.main__div--a{
     font-size: 25px;
     margin: 10px;
 }
-.a:hover{
+.main__div--a:hover{
     color: #524d73;
 }
 .div__img{

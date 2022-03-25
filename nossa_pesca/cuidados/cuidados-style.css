@@ -15,11 +15,11 @@
 .main {
     border-top: 0.4px solid #030303;
     display: flex;
-    height: 350px;
-    opacity: 0.9;
-    margin: auto;
-    width: auto;
+    min-height: 350px;
     justify-content: center;
+    margin: auto;
+    opacity: 0.9;
+    width: auto;
 }
 /* controla a opacidade da imagem */ 
 .main::before {
@@ -28,25 +28,24 @@
     background-size: contain;
     content: "";
     display: flex;
+    min-height: 320px;
+    margin-left: 40px;
     opacity: 0.2;
     position: absolute;
     width: 100%;
-    height: 320px;
-    margin-left: 40px;
 }
 .main__div {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    opacity: 0.9;
-    margin: 20px;
     gap: 8px;
+    margin: 20px;
+    opacity: 0.9;
+    width: 100%;
 }
 .h1, .p{
     font-family: 'Acme', sans-serif;
     font-weight: 400;
-    color: #000000;
 }
 .section__h1{
     font-size: 30px;
