@@ -57,24 +57,24 @@
 }
 @media (max-width:633px) {
     .main__h1{
-        font-size: 24px;
+        font-size: 27px;
     }
     .main__h3{
-        font-size: 14px;
+        font-size: 16px;
     }
     .main__div{
-        height: 490px;
-        gap: 40px;
+        height: 520px;
+        gap: 50px;
     }
     .main{
-        height: 490px;
+        height: 520px;
         z-index: 0;
     }
     .nav__ul{
         z-index: 1;
     }
     .main::before {
-        height: 490px;
+        height: 520px;
         opacity: 0.6;
     }    
 }
