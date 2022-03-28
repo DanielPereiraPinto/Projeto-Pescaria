@@ -24,7 +24,7 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
-    height: 100px;
+    height: 100%;
     left: 0;
     opacity: 0.7;
     position: absolute;
