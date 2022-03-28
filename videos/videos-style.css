@@ -7,7 +7,6 @@
 }
 html, body{
     height: 100%;
-    /* width: 100vw; */
 }
 .main, .header, .iframe__footer{
     background-color: #f0f0f7;
@@ -17,8 +16,7 @@ html, body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; 
-    /* height: auto; */
-    /* justify-content: center; */
+    justify-content: center;
     width: 100%;
     height: 100%;
 }

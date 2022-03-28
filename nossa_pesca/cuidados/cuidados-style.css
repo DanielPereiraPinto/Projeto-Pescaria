@@ -19,7 +19,6 @@ html, body{
     border-top: 0.4px solid #030303;
     display: flex;
     height: 100%;
-    /* min-height: 350px; */
     justify-content: center;
     margin: auto;
     opacity: 0.9;
