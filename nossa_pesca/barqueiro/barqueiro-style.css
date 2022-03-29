@@ -5,6 +5,9 @@
     padding: 0;
     text-decoration: none;
 }
+html, body{
+    height: 100%;
+}
 .header, .main, .iframe__footer, .div__img{
     background-color: #f0f0f7;
 }
@@ -15,14 +18,15 @@
 .main {
     border-top: 0.4px solid #030303;
     display: flex;
-    height: 250px;
+    flex-direction: column;
+    min-height: 75%;
     opacity: 0.9;
     margin: auto;
-    width: auto;
+    width: 100%;
     justify-content: center;
 }
 /* controla a opacidade da imagem */ 
-.main::before {
+.main__div::before {
     background-image: url(../barco.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -30,7 +34,7 @@
     display: flex;
     opacity: 0.1;
     position: absolute;
-    width: 95%;
+    width: 80%;
     height: 320px;
     margin-left: 50px;
 }
@@ -38,11 +42,11 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 330px;
+    height: 300px;
     width: 100%;
     opacity: 0.9;
-    margin: 20px;
-    gap: 5px;
+    padding: 10px;
+    gap: 8px;
 }
 .h1, .p, .main__div--a{
     font-family: 'Acme', sans-serif;
@@ -63,11 +67,12 @@
 .main__div--a:hover{
     color: #524d73;
 }
-.div__img{
+.main__div--img{
     display: flex;
     justify-content: center;
-    width: auto; 
+    width: 100%; 
     padding: 10px;
+    height: 400px;
 }
 .img{
     border-radius: 10px;
@@ -88,7 +93,7 @@
     }
 }
 @media (max-width: 367px){
-    .main::before {
+    .main__div::before {
         margin: 0px;
     }
 }
