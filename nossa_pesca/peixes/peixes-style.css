@@ -5,6 +5,9 @@
     padding: 0;
     text-decoration: none;
 }
+html, body{
+    height: 100%;
+}
 .header, .main, .iframe__footer, .container{
     background-color: #f0f0f7;
 }
@@ -18,7 +21,7 @@
     height: 180px;
     justify-content: center;
     margin: auto;
-    width: auto;
+    width: 100%;
 }
 /* controla a opacidade da imagem */ 
 .main::before {
@@ -27,19 +30,19 @@
     background-size: contain;
     content: "";
     display: flex;
-    height: 320px;
+    height: 280px;
     margin-left: 50px;
     opacity: 0.1;
     position: absolute;
-    width: 95%;
+    width: 90%;
 }
 .main__div {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    height: 380px;
-    margin: 20px;
+    height: 200px;
+    padding: 20px;
     width: 100%;
 }
 .h1, .p{
