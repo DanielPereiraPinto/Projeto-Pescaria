@@ -16,10 +16,11 @@ html, body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; 
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
+    min-height: 100%;
 }
-.main__h1, .title, .button{
+.main__h1, .main__h4,.title, .button{
     font-family: 'Acme', sans-serif;
     font-weight: 400;
 }
@@ -28,13 +29,16 @@ html, body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 15px;
     overflow: hidden;
     width: 100%;
 }
 .main__h1{
     font-size: 30px;
-    margin: 15px;
+    margin: 10px;
+}
+.main__h4{
+    font-size: 20px;
+    margin: 10px;
 }
 .video{
     align-items: center;
@@ -111,6 +115,9 @@ html, body{
     }
     .main__h1{
         font-size: 22px;
+    }
+    .main__h4{
+        font-size: 13px;
     }
 }
 @media (max-width: 318px){
