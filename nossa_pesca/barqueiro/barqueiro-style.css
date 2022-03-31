@@ -32,8 +32,7 @@ html, body{
     background-size: contain;
     content: "";
     display: flex;
-    height: 320px;
-    margin-left: 50px;
+    height: 200px;
     opacity: 0.1;
     position: absolute;
     width: 80%;
